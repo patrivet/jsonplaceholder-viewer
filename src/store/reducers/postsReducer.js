@@ -1,6 +1,6 @@
 import * as actionTypes from "../actionTypes";
 
-export function postReducer(state = null, action) {
+export function postsReducer(state = null, action) {
   switch (action.type) {
     case actionTypes.SET_POSTS:
       return {};
