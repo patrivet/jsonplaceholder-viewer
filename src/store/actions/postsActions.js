@@ -10,9 +10,9 @@ export const removePost = (postId) => ({
   postId,
 });
 
-export const setLoading = (payload) => ({
+export const setLoading = (isLoading) => ({
   type: actionTypes.SET_LOADING,
-  payload,
+  isLoading,
 });
 
 export function fetchPosts() {
