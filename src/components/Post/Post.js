@@ -5,10 +5,15 @@ import CardContent from "@material-ui/core/CardContent";
 import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
 import Typography from "@material-ui/core/Typography";
+import { useDispatch } from "react-redux";
+
+// Custom components
+import { removePost } from "../../store/actions/postsActions";
 
 const useStyles = makeStyles({
   root: {
     width: "60%",
+    display: "flex",
   },
   title: {
     fontWeight: 600,
@@ -16,10 +21,11 @@ const useStyles = makeStyles({
 });
 
 const Post = ({ post }) => {
+  const dispatch = useDispatch();
   const classes = useStyles();
 
-  const handleDelete = (postId) => {
-    console.log("INFO: Will delete Post ID=", postId);
+  const handleDelete = (id) => {
+    dispatch(removePost(id));
   };
 
   return (

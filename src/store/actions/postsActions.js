@@ -5,9 +5,9 @@ export const setPosts = (posts) => ({
   posts,
 });
 
-export const removePost = (postId) => ({
+export const removePost = (id) => ({
   type: actionTypes.REMOVE_POST,
-  postId,
+  id,
 });
 
 export const setLoading = (isLoading) => ({
