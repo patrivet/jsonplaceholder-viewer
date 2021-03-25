@@ -16,7 +16,7 @@ export const posts = (state = initialState, action) => {
     case actionTypes.REMOVE_POST:
       return {
         ...state,
-        list: state.list.filter((item) => item.id !== action.postId),
+        list: state.list.filter((item) => item.id !== action.id),
       };
 
     // TO-DO: possibly break set_loading into seperate reducer for SoC.
