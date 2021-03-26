@@ -14,6 +14,7 @@ const useStyles = makeStyles({
   root: {
     width: "60%",
     display: "flex",
+    justifyContent: "space-between",
     margin: 20,
   },
   title: {
