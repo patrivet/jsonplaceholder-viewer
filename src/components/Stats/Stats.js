@@ -18,7 +18,6 @@ const Stats = () => {
     statsValue: {
       fontWeight: 600,
     },
-    pos: {},
   });
 
   const [totalWords, setTotalWords] = useState(0);
@@ -39,7 +38,7 @@ const Stats = () => {
   const classes = useStyles();
 
   return (
-    <div className="statsContainer">
+    <div className="stats">
       <Card className={classes.root}>
         <CardContent>
           <Typography variant="h5" component="h2">
