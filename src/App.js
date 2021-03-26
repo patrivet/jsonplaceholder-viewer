@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       {loading ? (
-        <div>Loading...</div>
+        <div className="App__loading">Loading...</div>
       ) : (
         <>
           <Stats />
