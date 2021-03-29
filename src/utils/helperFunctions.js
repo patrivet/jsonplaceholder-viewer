@@ -11,7 +11,7 @@ export const getPostStats = (posts) => {
 
   posts.forEach((post) => {
     // Remove line breaks and split post into an array.
-    const postWords = post.body.replaceAll("\n", " ").split(" ");
+    const postWords = post.body.replace(/\n/g, " ").split(" ");
 
     // Iterate posts, count word occurances and sum words total.
     postWords.forEach((word) => {
