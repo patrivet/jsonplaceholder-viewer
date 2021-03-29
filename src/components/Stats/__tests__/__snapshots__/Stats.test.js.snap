@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="stats"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h5"
+        >
+          Total Word Count:
+        </h2>
+        <h2
+          class="MuiTypography-root makeStyles-statsValue-2 MuiTypography-h5"
+        >
+          0
+        </h2>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h5"
+        >
+          Top 5 Most Frequent Words:
+        </h2>
+        <h2
+          class="MuiTypography-root makeStyles-statsValue-2 MuiTypography-h5"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
