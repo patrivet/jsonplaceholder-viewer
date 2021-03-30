@@ -30,8 +30,8 @@ const Stats = () => {
     // Only compute when app is ready & posts to process
     if (ready && posts) {
       const { totalWords, mostFrequentWords } = getPostStats(posts);
-      setTotalWords(totalWords);
-      setMostFrequentWords(mostFrequentWords);
+      totalWords && setTotalWords(totalWords);
+      mostFrequentWords && setMostFrequentWords(mostFrequentWords);
     }
   }, [posts, ready]);
 

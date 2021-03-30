@@ -1,9 +1,9 @@
 export const getPostStats = (posts) => {
   if (!posts) {
     console.warn(
-      "WARNING: helpFunctions.getPostStats: expected parameter posts missing; returning null."
+      "WARNING: helpFunctions.getPostStats: expected parameter posts missing; returning empty object."
     );
-    return null;
+    return {};
   }
   let totalWords = 0,
     mostFrequentWords,
