@@ -2,16 +2,16 @@
 
 ### Prerequisites
 
-1. Install nvm:
+1. Install nvm, if not already installed:
     ```
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
     ```
-2. Install node:
+2. Install node, if not already installed:
     ```
     nvm install node
     ```
 
-### How to Run It from the Command Line
+### How to Run from the Command Line
 
 1. Make sure you are inside the `folder` folder.
 2. First install the npm dependencies:
