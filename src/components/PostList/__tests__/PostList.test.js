@@ -7,7 +7,7 @@ describe("PostList", () => {
   const mockStore = configureStore();
   const store = mockStore({
     posts: [],
-    loading: false,
+    ready: false,
   });
   // let component;
   test("renders correctly", () => {

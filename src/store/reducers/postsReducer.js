@@ -2,7 +2,7 @@ import * as actionTypes from "../actionTypes";
 
 const initialState = {
   posts: [],
-  loading: false,
+  ready: false,
 };
 
 export const posts = (state = initialState, action) => {
@@ -20,10 +20,10 @@ export const posts = (state = initialState, action) => {
       };
 
     // TO-DO: possibly break set_loading into seperate reducer for SoC.
-    case actionTypes.SET_LOADING:
+    case actionTypes.SET_READY:
       return {
         ...state,
-        loading: action.isLoading,
+        ready: action.isReady,
       };
 
     default:

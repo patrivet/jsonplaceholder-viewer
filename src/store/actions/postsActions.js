@@ -1,4 +1,6 @@
 import * as actionTypes from "../actionTypes";
+const POSTS_URL =
+  process.env.POSTS_URL || "https://jsonplaceholder.typicode.com/posts";
 
 export const setPosts = (posts) => ({
   type: actionTypes.SET_POSTS,
@@ -10,33 +12,33 @@ export const removePost = (id) => ({
   id,
 });
 
-export const setLoading = (isLoading) => ({
-  type: actionTypes.SET_LOADING,
-  isLoading,
+export const setReady = (isReady) => ({
+  type: actionTypes.SET_READY,
+  isReady,
 });
 
 export function fetchPosts() {
   return function (dispatch) {
-    dispatch(setLoading(true));
+    dispatch(setReady(false));
 
-    const url = "https://jsonplaceholder.typicode.com/posts";
     const headers = {
       headers: {
         Accept: "application/json",
       },
     };
 
-    fetch(url, headers)
+    fetch(POSTS_URL, headers)
       .then((res) => (res.ok ? res : Promise.reject(res)))
       .then((res) => res.json())
       .then((res) => {
         dispatch(setPosts(res));
       })
       .finally(() => {
-        dispatch(setLoading(false));
+        dispatch(setReady(true));
       })
       .catch((error) => {
-        console.error(`Error fetching GET to =${url} error =${error}`);
+        console.error(`Error fetching GET to =${POSTS_URL} error =`);
+        console.error(error);
       });
   };
 }

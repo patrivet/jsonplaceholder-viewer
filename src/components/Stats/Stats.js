@@ -24,16 +24,16 @@ const Stats = () => {
   const [mostFrequentWords, setMostFrequentWords] = useState([]);
 
   const posts = useSelector((state) => state.posts.list);
-  const loading = useSelector((state) => state.posts.loading);
+  const ready = useSelector((state) => state.posts.ready);
 
   useEffect(() => {
-    // Only compute when not loading & posts to process
-    if (!loading && posts) {
+    // Only compute when app is ready & posts to process
+    if (ready && posts) {
       const { totalWords, mostFrequentWords } = getPostStats(posts);
       setTotalWords(totalWords);
       setMostFrequentWords(mostFrequentWords);
     }
-  }, [posts, loading]);
+  }, [posts, ready]);
 
   const classes = useStyles();
 

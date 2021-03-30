@@ -9,7 +9,7 @@ import PostList from "./components/PostList";
 
 function App() {
   const posts = useSelector((store) => store.posts.list);
-  const loading = useSelector((state) => state.posts.loading);
+  const ready = useSelector((state) => state.posts.ready);
   const dispatch = useDispatch();
 
   // Fetch the posts
@@ -19,13 +19,13 @@ function App() {
 
   return (
     <div className="App">
-      {loading ? (
-        <div className="App__loading">Loading...</div>
-      ) : (
+      {ready ? (
         <>
           <Stats />
           <PostList posts={posts} />
         </>
+      ) : (
+        <div className="App__loading">Loading...</div>
       )}
     </div>
   );

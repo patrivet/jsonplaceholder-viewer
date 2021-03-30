@@ -8,7 +8,7 @@ describe("Stats", () => {
   test("renders correctly", () => {
     store = mockStore({
       posts: [],
-      loading: false,
+      ready: false,
     });
 
     const { container } = render(

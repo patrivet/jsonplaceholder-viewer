@@ -8,7 +8,7 @@ describe("Post", () => {
   test("should dispatch an action on button click", () => {
     store = mockStore({
       posts: [],
-      loading: false,
+      ready: false,
     });
 
     store.dispatch = jest.fn();
