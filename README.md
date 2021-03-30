@@ -13,7 +13,7 @@
 
 ### How to Run from the Command Line
 
-1. Make sure you are inside the `folder` folder.
+1. Make sure you are inside the `jsonplaceholder-viewer` folder.
 2. First install the npm dependencies:
     ```
     npm install
