@@ -29,4 +29,7 @@
     npm test
     ```
 
+#### Live app:
+To see the app running - visit the hosted [site](https://json-placeholder-viewer.netlify.app/) on Netlify.
+
 Created by:  Pat Rivet :: [Github](https://github.com/patrivet/) :: [LinkedIn](https://www.linkedin.com/in/pat-rivet/)
