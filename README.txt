@@ -23,3 +23,7 @@ JSON Placeholder viewer
 3. If you want to run tests:
 
 	npm test
+
+
+4. Live app:
+To see the app running - visit the hosted site (https://json-placeholder-viewer.netlify.app/) on Netlify.	
